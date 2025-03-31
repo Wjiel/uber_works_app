@@ -9,3 +9,5 @@ Color mediumOrange = Color(0xFFFF671C);
 Color lowOrange = Color(0xFFFF925B);
 
 Color orange = Color(0xFFFD5603);
+
+Color darkSign = Color(0xFF3C3C3C);

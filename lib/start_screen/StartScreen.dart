@@ -9,8 +9,8 @@ class StartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: appBars,
-      body: BodyViewS(),
+      appBar: appBar,
+      body: BodyViewScreen(),
     );
   }
 }

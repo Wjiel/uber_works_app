@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uber_works_app/color.dart';
+import 'package:uber_works_app/colors.dart';
 
-AppBar appBars = AppBar(
+AppBar appBar = AppBar(
   backgroundColor: Colors.white,
   title: RichText(
     text: TextSpan(
