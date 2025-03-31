@@ -1,0 +1,2 @@
+/home/oops/gitClons/uber_works_app/android/app/.cxx/Debug/5g4q2f6c/x86_64/CMakeFiles/edit_cache.dir
+/home/oops/gitClons/uber_works_app/android/app/.cxx/Debug/5g4q2f6c/x86_64/CMakeFiles/rebuild_cache.dir
