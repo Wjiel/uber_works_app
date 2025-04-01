@@ -9,7 +9,8 @@ class Carouselitem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(image: Image.asset(listString['image']).image, fit: BoxFit.cover),
+        image: DecorationImage(
+            image: Image.asset(listString['image']).image, fit: BoxFit.cover),
         borderRadius: BorderRadius.circular(24),
       ),
       child: Stack(
@@ -19,21 +20,17 @@ class Carouselitem extends StatelessWidget {
             width: 242,
             height: 163,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(46),
-              boxShadow: <BoxShadow>[
-              BoxShadow(
-                color: highBlue,
-                spreadRadius: 0,
-                blurRadius: 116.3,
-              ),
-            ]),
+                borderRadius: BorderRadius.circular(46),
+                boxShadow: <BoxShadow>[
+                  BoxShadow(
+                    color: highBlue,
+                    spreadRadius: 0,
+                    blurRadius: 116.3,
+                  ),
+                ]),
           ),
           Padding(
-            padding: EdgeInsets.only(
-              left: 36,
-              bottom: 30,
-              right: 60
-            ),
+            padding: EdgeInsets.only(left: 36, bottom: 30, right: 60),
             child: Text(
               listString['text'],
               style: TextStyle(
@@ -47,8 +44,8 @@ class Carouselitem extends StatelessWidget {
                       blurRadius: 1,
                     ),
                   ]),
-                  overflow: TextOverflow.clip,
-              maxLines: 4,
+              overflow: TextOverflow.clip,
+              maxLines: 5,
             ),
           )
         ],

@@ -7,9 +7,9 @@ class BodyViewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
-        SizedBox(height: 45),
+        SizedBox(height: 45,),
         Carousel(),
         SignInUp(),
       ],
