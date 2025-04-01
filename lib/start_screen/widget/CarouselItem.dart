@@ -2,23 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:uber_works_app/colors.dart';
 
 class Carouselitem extends StatelessWidget {
-  final List<Map<String, dynamic>> listString;
-  final int index;
-  const Carouselitem({super.key, required this.listString, required this.index});
+  final Map<String, dynamic> listString;
+  const Carouselitem({super.key, required this.listString});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        image: listString[index]['image'],
+        image: DecorationImage(image: Image.asset(listString['image']).image, fit: BoxFit.cover),
         borderRadius: BorderRadius.circular(24),
-        boxShadow: <BoxShadow>[
-          BoxShadow(
-            color: mediumOrange,
-            blurRadius: 50,
-            spreadRadius: 0,
-          ),
-        ],
       ),
       child: Stack(
         alignment: AlignmentDirectional.bottomCenter,
@@ -43,7 +35,7 @@ class Carouselitem extends StatelessWidget {
               right: 60
             ),
             child: Text(
-              listString[index]['text'],
+              listString['text'],
               style: TextStyle(
                   color: Colors.white,
                   fontFamily: 'RobotoSerif',

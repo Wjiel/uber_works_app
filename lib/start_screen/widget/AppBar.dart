@@ -5,7 +5,6 @@ AppBar appBar = AppBar(
   backgroundColor: Colors.white,
   title: RichText(
     text: TextSpan(
-      text: 'cантехник.',
       style: TextStyle(
         color: highBlue,
         fontSize: 25,
@@ -14,12 +13,12 @@ AppBar appBar = AppBar(
       ),
       children: <TextSpan>[
         TextSpan(
+          text: 'сантехник.',
+        ),
+        TextSpan(
           text: 'ру',
           style: TextStyle(
             color: orange,
-            fontSize: 25,
-            fontFamily: 'RobotoSerif',
-            fontWeight: FontWeight.w600,
           ),
         ),
       ],
