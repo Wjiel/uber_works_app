@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:uber_works_app/colors.dart';
+import 'package:uber_works_app/custom_widgets/buttons/CustomButtonSign.dart';
 
 class SignInUp extends StatelessWidget {
   const SignInUp({super.key});
@@ -14,26 +15,7 @@ class SignInUp extends StatelessWidget {
       ),
       child: Column(
         children: [
-          InkWell(
-            borderRadius: BorderRadius.circular(20),
-            onTap: () {}, // Код
-            child: Ink(
-              width: double.infinity,
-              padding: EdgeInsets.symmetric(vertical: 10.5),
-              decoration: BoxDecoration(
-                  color: highBlue, borderRadius: BorderRadius.circular(20)),
-              child: Center(
-                child: Text(
-                  'Войти',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'RobotoSlab',
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500),
-                ),
-              ),
-            ),
-          ),
+          CustomButtonSign(inputWords: 'Войти',),
           SizedBox(
             height: 15,
           ),
@@ -70,7 +52,7 @@ class SignInUp extends StatelessWidget {
                 color: darkSign,
                 fontFamily: 'RobotoSlab',
                 fontSize: 16,
-                fontWeight: FontWeight.w500),
+                fontWeight: FontWeight.w500,),
           ),
           SizedBox(
             height: 25,
@@ -78,17 +60,7 @@ class SignInUp extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             spacing: 40,
-            children: [
-              _microItem(
-                strigImage: 'assets/images/yaPNG.png',
-              ),
-              _microItem(
-                strigImage: 'assets/images/vkPNG.png',
-              ),
-              _microItem(
-                strigImage: 'assets/images/gosPNG.png',
-              ),
-            ],
+            children: List.generate(3, (index) => _microItem(strigImage: _pictureForSign[index])),
           )
         ],
       ),
@@ -119,3 +91,8 @@ class _microItem extends StatelessWidget {
     );
   }
 }
+List<String> _pictureForSign = [
+ 'assets/images/yaPNG.png',
+ 'assets/images/vkPNG.png',
+ 'assets/images/gosPNG.png',
+];

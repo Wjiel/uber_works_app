@@ -11,10 +11,10 @@ TextStyle _styleTextIn = TextStyle(
   fontWeight: FontWeight.w600,
 );
 
-class TextForPage extends StatelessWidget {
+class CustomTextForPage extends StatelessWidget {
   final bool? isSwtich;
   final String textString;
-  const TextForPage({super.key, required this.textString, this.isSwtich});
+  const CustomTextForPage({super.key, required this.textString, this.isSwtich});
 
   @override
   Widget build(BuildContext context) {

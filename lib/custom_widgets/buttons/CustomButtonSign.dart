@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:uber_works_app/colors.dart';
 
-class ButtonSign extends StatelessWidget {
-  final String InputWords;
-  final bool? Colorchik;
-  const ButtonSign({super.key, required this.InputWords, this.Colorchik});
+class CustomButtonSign extends StatelessWidget {
+  final String inputWords;
+  final bool? colorchik;
+  const CustomButtonSign({super.key, required this.inputWords, this.colorchik});
 
   @override
   Widget build(BuildContext context) {
@@ -15,12 +15,12 @@ class ButtonSign extends StatelessWidget {
         width: double.infinity,
         padding: EdgeInsets.symmetric(vertical: 14),
         decoration: BoxDecoration(
-          color: Colorchik ?? false ? lowOrange : highBlue,
+          color: colorchik ?? false ? lowOrange : highBlue,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Center(
           child: Text(
-            InputWords,
+            inputWords,
             style: TextStyle(
               color: Colors.white,
               fontFamily: 'RobotoSlab',

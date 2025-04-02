@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 
-class BoxWithText extends StatefulWidget {
+class CustomBoxWithText extends StatefulWidget {
   final bool? isSwitchPass;
-  const BoxWithText({super.key, this.isSwitchPass});
+  const CustomBoxWithText({super.key, this.isSwitchPass});
 
 
   @override
-  State<BoxWithText> createState() => _BoxWithTextState();
+  State<CustomBoxWithText> createState() => _CustomBoxWithTextState();
 }
 
-class _BoxWithTextState extends State<BoxWithText> {
-  final controllerText = TextEditingController();
+class _CustomBoxWithTextState extends State<CustomBoxWithText> {
+  final TextEditingController controllerText = TextEditingController();
   
-
+  @override
+  void dispose() {
+    controllerText.dispose();
+    super.dispose();
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Ink(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:uber_works_app/login_window/widget/BoxWithText.dart';
-import 'package:uber_works_app/login_window/widget/ButtonSign.dart';
+import 'package:uber_works_app/custom_widgets/TextFields/CustomBoxWithText.dart';
+import 'package:uber_works_app/custom_widgets/buttons/CustomButtonSign.dart';
 import 'package:uber_works_app/login_window/widget/JustText.dart';
-import 'package:uber_works_app/login_window/widget/TextForPage.dart';
+import 'package:uber_works_app/custom_widgets/Text/CustomTextForPage.dart';
 
 class LoginWindow extends StatefulWidget {
   const LoginWindow({super.key});
@@ -20,19 +20,19 @@ class _LoginWindowState extends State<LoginWindow> {
         child: ListView(
           children: [
             SizedBox(height: 170),
-            Center(child: TextForPage(textString: 'Вход', isSwtich: true)),
+            Center(child: CustomTextForPage(textString: 'Вход', isSwtich: true)),
             SizedBox(height: 45),
-            TextForPage(textString: 'Номер телефона:'),
+            CustomTextForPage(textString: 'Номер телефона:'),
             SizedBox(height: 9),
-            BoxWithText(),
+            CustomBoxWithText(),
             SizedBox(height: 25),
-            TextForPage(textString: 'Пароль:'),
+            CustomTextForPage(textString: 'Пароль:'),
             SizedBox(height: 9), 
-            BoxWithText(isSwitchPass: true),
+            CustomBoxWithText(isSwitchPass: true),
             SizedBox(height: 60),
-            ButtonSign(InputWords: 'Войти'),
+            CustomButtonSign(inputWords: 'Войти'),
             SizedBox(height: 15),
-            ButtonSign(InputWords: 'Назад',Colorchik: true),
+            CustomButtonSign(inputWords: 'Назад',colorchik: true),
             SizedBox(height: 25),
             Center(child: JustText()),
           ],
