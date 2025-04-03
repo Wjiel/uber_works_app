@@ -4,7 +4,10 @@ import 'package:uber_works_app/custom_widgets/buttons/CustomButtonSign.dart';
 import 'package:uber_works_app/registration_window/widgets/AnimationButton.dart';
 import 'package:uber_works_app/registration_window/widgets/TextAndTextField.dart';
 
-const List<String> _listNameTextString = [
+
+
+class RegistrationWindow extends StatelessWidget {
+  final List<String> _listNameTextString = [
   'Регистрация',
   'ФИО:',
   'Возраст:',
@@ -12,9 +15,7 @@ const List<String> _listNameTextString = [
   'Номер телефона:',
   'Пароль',
 ];
-
-class RegistrationWindow extends StatelessWidget {
-  const RegistrationWindow({super.key});
+  RegistrationWindow({super.key});
 
   @override
   Widget build(BuildContext context) {
