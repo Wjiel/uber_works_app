@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uber_works_app/custom_widgets/TextFields/CustomBoxWithText.dart';
 import 'package:uber_works_app/custom_widgets/buttons/CustomButtonSign.dart';
-import 'package:uber_works_app/login_window/widget/JustText.dart';
+import 'package:uber_works_app/login_screen/widget/JustText.dart';
 import 'package:uber_works_app/custom_widgets/Text/CustomTextForPage.dart';
 
 class LoginWindow extends StatefulWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:uber_works_app/custom_widgets/Text/CustomTextForPage.dart';
 import 'package:uber_works_app/custom_widgets/buttons/CustomButtonSign.dart';
-import 'package:uber_works_app/registration_window/widgets/AnimationButton.dart';
-import 'package:uber_works_app/registration_window/widgets/TextAndTextField.dart';
+import 'package:uber_works_app/registration_screen/widgets/AnimationButton.dart';
+import 'package:uber_works_app/registration_screen/widgets/TextAndTextField.dart';
 
 
 
